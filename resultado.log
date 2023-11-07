@@ -1,0 +1,80 @@
+[2023-11-03 22:05:18] [ INFO ] [PacienteDAOH2:153] iniciando las operaciones de : buscado por email jorgito@jorgito.com
+[2023-11-03 22:05:18] [ ERROR] [PacienteDAOH2:170] org.h2.Driver
+[2023-11-03 22:10:32] [ INFO ] [PacienteDAOH2:153] iniciando las operaciones de : buscado por email jorgito@jorgito.com
+[2023-11-03 22:10:32] [ ERROR] [PacienteDAOH2:170] org.h2.Driver
+[2023-11-03 22:11:17] [ INFO ] [PacienteDAOH2:153] iniciando las operaciones de : buscado por email jorgito@jorgito.com
+[2023-11-03 22:11:17] [ ERROR] [PacienteDAOH2:170] org.h2.Driver
+[2023-11-03 22:13:59] [ WARN ] [BD:31] org.h2.Driver
+[2023-11-03 22:15:26] [ WARN ] [BD:31] Versión del archivo de base de datos no soportada ó encabezado de archivo invalido en archivo "C:/Users/DH/C21023ClinicaOdontologica.mv.db"
+Unsupported database file version or invalid file header in file "C:/Users/DH/C21023ClinicaOdontologica.mv.db" [90048-224]
+[2023-11-03 22:16:12] [ WARN ] [BD:31] La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Jorgito','Pereyra','11111','2023-10-27','1','jorgito@jorgito.com'),('Paola','Viloria','22222','2023-10-15','2','paola@paola.com'),('Ignacio','Freilij','33333','2023-10-20','3'); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Av.Colon','1600','Cordoba','Cordoba'),('Av. 9 de Julio','1200','Caba','Bs As') [21002-214]
+[2023-11-03 22:17:35] [ WARN ] [BD:31] La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES('Jorgito','Pereyra','11111','2023-10-27','1','jorgito@jorgito.com'),('Paola','Viloria','22222','2023-10-15','2','paola@paola.com'),('Ignacio','Freilij','33333','2023-10-20','3'); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Av.Colon','1600','Cordoba','Cordoba'),('Av. 9 de Julio','1200','Caba','Bs As') [21002-214]
+[2023-11-03 22:18:38] [ INFO ] [BD:28] datos cargados con exito
+[2023-11-03 22:18:55] [ INFO ] [PacienteDAOH2:153] iniciando las operaciones de : buscado por email jorgito@jorgito.com
+[2023-11-03 22:18:55] [ INFO ] [DomicilioDAOH2:42] iniciando las operaciones de buscar un domicilio con ID: 1
+[2023-11-03 22:19:15] [ INFO ] [PacienteDAOH2:153] iniciando las operaciones de : buscado por email ignacio@gmail.com
+[2023-11-03 22:19:15] [ INFO ] [DomicilioDAOH2:42] iniciando las operaciones de buscar un domicilio con ID: 3
+[2023-11-06 11:13:40] [ INFO ] [BD:28] datos cargados con exito
+[2023-11-06 15:38:30] [ INFO ] [BD:32] datos cargados con exito
+[2023-11-06 15:45:45] [ INFO ] [BD:32] datos cargados con exito
+[2023-11-06 16:51:41] [ WARN ] [BD:35] Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex[*]@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As')"; se esperaba "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex[*]@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As')"; expected "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As') [42001-214]
+[2023-11-06 16:52:08] [ WARN ] [BD:35] Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex[*]@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As')"; se esperaba "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex[*]@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As')"; expected "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As') [42001-214]
+[2023-11-06 16:54:23] [ WARN ] [BD:35] Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex[*]@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As')"; se esperaba "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex[*]@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As')"; expected "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As') [42001-214]
+[2023-11-06 16:55:00] [ WARN ] [BD:35] Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex[*]@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As')"; se esperaba "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex[*]@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As')"; expected "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', hombrex@gmail.com),('Montgomery','Burns','00145','2023-10-15','2', mrburns@gmail.com),('Moe','Szyslac','34567','2023-10-20','3', alonemoe@gmail.com); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As') [42001-214]
+[2023-11-06 16:55:00] [ INFO ] [OdontologoDAOH2:14] guardando nuevo odontologo
+[2023-11-06 16:55:00] [ INFO ] [OdontologoDAOH2:27]  odontologo guardado correctamente
+[2023-11-06 16:55:00] [ INFO ] [OdontologoDAOH2:81] Se han obtenido todos los odontólogos de manera exitosa
+[2023-11-06 16:57:44] [ WARN ] [BD:35] La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', 'hombrex@gmail.com'),('Montgomery','Burns','00145','2023-10-15','2', 'mrburns@gmail.com'),('Moe','Szyslac','34567','2023-10-20','3', 'alonemoe@gmail.com'); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As') [21002-214]
+[2023-11-06 16:57:44] [ INFO ] [OdontologoDAOH2:14] guardando nuevo odontologo
+[2023-11-06 16:57:44] [ INFO ] [OdontologoDAOH2:27]  odontologo guardado correctamente
+[2023-11-06 16:57:44] [ INFO ] [OdontologoDAOH2:81] Se han obtenido todos los odontólogos de manera exitosa
+[2023-11-06 16:57:49] [ WARN ] [BD:35] La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Homero','Simpson','C4043243','1956-05-12','1', 'hombrex@gmail.com'),('Montgomery','Burns','00145','2023-10-15','2', 'mrburns@gmail.com'),('Moe','Szyslac','34567','2023-10-20','3', 'alonemoe@gmail.com'); INSERT INTO DOMICILIOS(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre viva','742','Sprinfield','Usa'),('Rich Av.','$1000','Cordoba','Cordoba'),('Bar de Moe','s/n','Caba','Bs As') [21002-214]
+[2023-11-06 16:57:49] [ INFO ] [OdontologoDAOH2:14] guardando nuevo odontologo
+[2023-11-06 16:57:49] [ INFO ] [OdontologoDAOH2:27]  odontologo guardado correctamente
+[2023-11-06 16:57:49] [ INFO ] [OdontologoDAOH2:81] Se han obtenido todos los odontólogos de manera exitosa
+[2023-11-06 16:59:52] [ WARN ] [BD:40] Conversión de datos fallida, convirtiendo "'$1000' (DOMICILIOS: ""NUMERO"" INTEGER NOT NULL)"
+Data conversion error converting "'$1000' (DOMICILIOS: ""NUMERO"" INTEGER NOT NULL)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES ('Homero', 'Simpson', 'C4043243', '1956-05-12', 1, 'hombrex@gmail.com'), ('Montgomery', 'Burns', '00145', '2023-10-15', 2, 'mrburns@gmail.com'), ('Moe', 'Szyslac', '34567', '2023-10-20', 3, 'alonemoe@gmail.com') [22018-214]
+[2023-11-06 16:59:52] [ INFO ] [OdontologoDAOH2:14] guardando nuevo odontologo
+[2023-11-06 16:59:52] [ INFO ] [OdontologoDAOH2:27]  odontologo guardado correctamente
+[2023-11-06 16:59:52] [ INFO ] [OdontologoDAOH2:81] Se han obtenido todos los odontólogos de manera exitosa
+[2023-11-06 17:00:35] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-06 17:00:35] [ INFO ] [OdontologoDAOH2:14] guardando nuevo odontologo
+[2023-11-06 17:00:35] [ INFO ] [OdontologoDAOH2:27]  odontologo guardado correctamente
+[2023-11-06 17:00:35] [ INFO ] [OdontologoDAOH2:81] Se han obtenido todos los odontólogos de manera exitosa
+[2023-11-06 17:01:52] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-06 19:19:21] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-06 19:37:59] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-06 19:45:45] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-06 19:50:57] [ INFO ] [PacienteDAOH2:153] iniciando las operaciones de : buscado por email homer@gmail.com
+[2023-11-06 19:51:51] [ INFO ] [PacienteDAOH2:153] iniciando las operaciones de : buscado por email hombrex@gmail.com
+[2023-11-06 21:18:05] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-06 21:23:15] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-06 21:23:15] [ INFO ] [OdontologoDAOH2:13] guardando nuevo odontologo
+[2023-11-06 21:23:15] [ INFO ] [OdontologoDAOH2:26]  odontologo guardado correctamente
+[2023-11-06 21:23:15] [ INFO ] [OdontologoDAOH2:80] Se han obtenido todos los odontólogos de manera exitosa
+[2023-11-06 21:25:00] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-06 21:28:45] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-06 21:29:45] [ INFO ] [PacienteDAOH2:153] iniciando las operaciones de : buscado por email hombrex@gmail.com
+[2023-11-06 21:30:21] [ INFO ] [PacienteDAOH2:153] iniciando las operaciones de : buscado por email alonemoe@gmail.com
+[2023-11-06 21:33:48] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-07 15:45:02] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-07 16:50:13] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-07 16:50:29] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-07 17:04:39] [ INFO ] [BD:37] datos cargados con exito
