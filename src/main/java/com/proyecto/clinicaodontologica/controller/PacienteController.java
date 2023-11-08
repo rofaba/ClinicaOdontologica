@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/paciente")
+@RequestMapping("/pacientes")
 public class PacienteController {
     private PacienteService pacienteService;
 
@@ -43,5 +43,21 @@ public class PacienteController {
             return "paciente no encontrado";
         }
     }
+    @DeleteMapping("/eliminar/{id}")
+    public String eliminarPaciente(@PathVariable("id") Integer id){
+        Paciente p= pacienteService.buscarPorId(id);
+        if(p != null){
+            pacienteService.eliminarPaciente(id);
+            return "paciente eliminado con exito";
+        }else{
+            return "paciente no encontrado";
+        }
+    }
+    @GetMapping("/listar")
+    public String listarPacientes(Model model){
+        model.addAttribute("pacientes",pacienteService.obtenerTodosLosPacientes());
+        return "pacientes";
+    }
+
 
 }

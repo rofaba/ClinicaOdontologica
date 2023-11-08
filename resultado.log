@@ -78,3 +78,4 @@ INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EM
 [2023-11-07 16:50:13] [ INFO ] [BD:37] datos cargados con exito
 [2023-11-07 16:50:29] [ INFO ] [BD:37] datos cargados con exito
 [2023-11-07 17:04:39] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-07 21:20:51] [ INFO ] [BD:37] datos cargados con exito
