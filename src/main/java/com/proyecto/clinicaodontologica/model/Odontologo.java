@@ -1,31 +1,42 @@
 package com.proyecto.clinicaodontologica.model;
 
+
 public class Odontologo {
-    private int id;
-    private int numeroMatricula;
+    private Integer id;
+    private String matricula; //<<---- ID
     private String nombre;
     private String apellido;
 
-    public Odontologo(int numeroMatricula, String nombre, String apellido) {
-        this.numeroMatricula = numeroMatricula;
+    public Odontologo() {
+    }
+
+    public Odontologo(Integer id, String matricula, String nombre, String apellido) {
+        this.id = id;
+        this.matricula = matricula;
         this.nombre = nombre;
         this.apellido = apellido;
     }
 
-    public int getId() {
+    public Odontologo(String matricula, String nombre, String apellido) {
+        this.matricula = matricula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int getNumeroMatricula() {
-        return numeroMatricula;
+    public String getMatricula() {
+        return matricula;
     }
 
-    public void setNumeroMatricula(int numeroMatricula) {
-        this.numeroMatricula = numeroMatricula;
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 
     public String getNombre() {

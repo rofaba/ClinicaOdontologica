@@ -12,15 +12,14 @@ public class PacienteDAOH2 implements iDao<Paciente>{
     private static final String SQL_SELECT_ALL="SELECT * FROM PACIENTES";
     private static final String SQL_SELECT_BY="SELECT * FROM PACIENTES WHERE ID=?";
     private static final String SQL_SELECT_BY_EMAIL="SELECT * FROM PACIENTES WHERE EMAIL=?";
-
-
+    private static final String SQL_DELETE="DELETE * FROM PACIENTES WHERE ID=?";
     @Override
     public Paciente guardar(Paciente paciente) {
         logger.info("guardando paciente");
         Connection connection= null;
         try{
-            connection= BD.getConnection(); //obtengo la conexion
-            DomicilioDAOH2 daoAux= new DomicilioDAOH2(); //creo una instancia de dao domicilio para devolver un objeto domicilio
+            connection= BD.getConnection();
+            DomicilioDAOH2 daoAux= new DomicilioDAOH2();
             Domicilio domicilio= daoAux.guardar(paciente.getDomicilio());
             PreparedStatement psInsert= connection.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS);
             psInsert.setString(1, paciente.getNombre());
@@ -29,13 +28,12 @@ public class PacienteDAOH2 implements iDao<Paciente>{
             psInsert.setDate(4, Date.valueOf(paciente.getFechaIngreso()));
             psInsert.setInt(5,domicilio.getId());
             psInsert.setString(6,paciente.getEmail());
-            psInsert.execute(); //en teoria si hay claves se generan
+            psInsert.execute();
             ResultSet clave= psInsert.getGeneratedKeys();
             while (clave.next()){
                 paciente.setId(clave.getInt(1));
             }
-            logger.info(" paciente guardado");
-
+            logger.info("Paciente guardado correctamente con id: "+paciente.getId()+" nombre: "+paciente.getNombre()+" apellido: "+paciente.getApellido()+" cedula: "+paciente.getCedula()+" fecha de ingreso: "+paciente.getFechaIngreso()+" domicilio: "+paciente.getDomicilio()+" email: "+paciente.getEmail()+"\n");
 
         }catch (Exception e){
             logger.error(e.getMessage());
@@ -51,10 +49,10 @@ public class PacienteDAOH2 implements iDao<Paciente>{
 
     @Override
     public Paciente buscar(Integer id) {
-        logger.info("iniciando las operaciones de : buscado por id "+id);
-        Connection connection= null;
-        Paciente paciente=null;
-        Domicilio domicilio=null;
+        logger.info("Buscando paciente con ID:" + id);
+        Connection connection = null;
+        Paciente paciente = null;
+        Domicilio domicilio = null;
         try{
             connection= BD.getConnection();
             PreparedStatement psSelectOne= connection.prepareStatement(SQL_SELECT_BY);
@@ -81,9 +79,13 @@ public class PacienteDAOH2 implements iDao<Paciente>{
 
     @Override
     public void eliminar(Integer id) {
-        logger.info("iniciando las operaciones de : ");
+        logger.info("Eliminando paciente con ID" + id);
         Connection connection= null;
         try{
+            connection= BD.getConnection();
+            PreparedStatement psDelete= connection.prepareStatement(SQL_DELETE);
+            psDelete.setInt(1,id);
+            psDelete.execute();
 
         }catch (Exception e){
             logger.error(e.getMessage());
@@ -99,7 +101,7 @@ public class PacienteDAOH2 implements iDao<Paciente>{
 
     @Override
     public void actualizar(Paciente paciente) {
-        logger.info("iniciando las operaciones de : ");
+        logger.info("Actualizando Paciente " + paciente.getNombre());
         Connection connection= null;
         try{
 
@@ -112,12 +114,11 @@ public class PacienteDAOH2 implements iDao<Paciente>{
                 logger.error(ex.getMessage());
             }
         }
-
     }
 
     @Override
     public List<Paciente> buscarTodos() {
-        logger.info("iniciando las operaciones de : listado de un paciente ");
+        logger.info("Listando todos los pacientes");
         Connection connection= null;
         List<Paciente> pacientes= new ArrayList<>();
         Paciente paciente=null;
@@ -133,9 +134,6 @@ public class PacienteDAOH2 implements iDao<Paciente>{
                 paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7));
                 pacientes.add(paciente);
             }
-
-
-
         }catch (Exception e){
             logger.error(e.getMessage());
         }finally {
@@ -147,10 +145,9 @@ public class PacienteDAOH2 implements iDao<Paciente>{
         }
         return pacientes;
     }
-
     @Override
     public Paciente buscarPorString(String valor) {
-        logger.info("iniciando las operaciones de : buscado por email "+valor);
+        logger.info("Buscando paciente por EMail: " + valor);
         Connection connection= null;
         Paciente paciente=null;
         Domicilio domicilio=null;
@@ -165,7 +162,6 @@ public class PacienteDAOH2 implements iDao<Paciente>{
                 paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7));
 
             }
-
         }catch (Exception e){
             logger.error(e.getMessage());
         }finally {

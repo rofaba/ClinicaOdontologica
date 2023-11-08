@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PacienteService {
+public class PacienteServiceH2 {
     private iDao<Paciente> pacienteiDao;
 
-    public PacienteService() {
+    public PacienteServiceH2() {
         pacienteiDao= new PacienteDAOH2();
     }
     public Paciente guardarPaciente(Paciente paciente){

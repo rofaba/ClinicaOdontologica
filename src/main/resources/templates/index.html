@@ -2,12 +2,16 @@
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{../static/styles.css}" />
+    <title>Bienvenido a la Clinica Odontologica Diente Blanco</title>
 </head>
-<body>
-<p>
-    Hola Paciente: <span th:text="${nombre}"/><span th:text="${apellido}"/>
-</p>
-
+<body th:style="'color: blue; background-color: light-blue; font-family: Arial, sans-serif; text-align: center; padding: 20px;'">
+<h1 style="font-size: 24px; margin-bottom: 20px;">Bienvenido a la Clinica Odontologica Diente Blanco</h1>
+<div class="boton" style="padding: 10px; text-align: center;">
+    <p style="font-weight: bold; font-size: 18px;">Acciones a realizar</p>
+</div>
+<div th:style="'color: blue; background-color: yellow; padding: 10px; text-align: center; margin-top: 20px; font-weight: bold; font-size: 18px;'">
+    Este es un elemento con estilos directos.
+</div>
 </body>
 </html>

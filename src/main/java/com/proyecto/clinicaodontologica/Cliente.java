@@ -8,16 +8,17 @@ import java.util.ArrayList;
 public class Cliente {
     public static <List> void main(String[] args) {
         BD.crearTabla();
-        // Crear un odontólogo
-        Odontologo odontologo1 = new Odontologo(11111, "Mario", "Martinez");
-        Odontologo odontologo2 = new Odontologo(22222, "Blanca", "Rojas");
+        // Odontólogo
+        Odontologo odontologo1 = new Odontologo("VV111", "Diente", "Blanco");
+        Odontologo odontologo2 = new Odontologo("VV333", "Guillermo", "Caries");
+        Odontologo odontologo3 = new Odontologo("VV444", "Mariano", "Muelas");
 
-        // Crear services
+        // Service
         OdontologoServiceH2 serviceH2 = new OdontologoServiceH2();
 
-
-        // Guardar odontólogos
+        // Guardar Odontologos
         Odontologo odontologoGuardadoH2 = serviceH2.guardarOdontologo(odontologo1);
+
 
         //Listar todos los odontólogos
         ArrayList<Odontologo> odontologosH2 = (ArrayList<Odontologo>) serviceH2.buscarTodosOdontologos();
@@ -25,7 +26,7 @@ public class Cliente {
         // Imprimir los odontólogos
         System.out.println("Odontólogos (H2):");
         for (Odontologo o : odontologosH2) {
-            System.out.println(o.getNumeroMatricula() + " - " + o.getNombre() + " " + o.getApellido());
+            System.out.println(o.getMatricula() + " - " + o.getNombre() + " " + o.getApellido());
         }
     }
 }
