@@ -127,3 +127,28 @@ INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EM
 [2023-11-08 16:31:41] [ INFO ] [PacienteDAOH2:121] Listando todos los pacientes
 [2023-11-08 16:33:03] [ INFO ] [PacienteDAOH2:150] Buscando paciente por EMail: hombrex@gmail.com
 [2023-11-08 16:38:11] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-08 17:41:49] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-08 17:48:33] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-08 17:50:10] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-08 17:51:34] [ INFO ] [PacienteDAOH2:150] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-08 18:08:45] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:1
+[2023-11-08 18:09:05] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:2
+[2023-11-08 18:09:11] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:3
+[2023-11-08 18:09:22] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:4
+[2023-11-08 18:09:27] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:1
+[2023-11-08 20:42:23] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-08 20:42:30] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:1
+[2023-11-08 20:42:30] [ INFO ] [DomicilioDAOH2:40] iniciando las operaciones de buscar un domicilio con ID: 1
+[2023-11-08 20:44:24] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:2
+[2023-11-08 20:44:24] [ INFO ] [DomicilioDAOH2:40] iniciando las operaciones de buscar un domicilio con ID: 2
+[2023-11-08 20:44:30] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:3
+[2023-11-08 20:44:30] [ INFO ] [DomicilioDAOH2:40] iniciando las operaciones de buscar un domicilio con ID: 3
+[2023-11-08 20:48:54] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:1
+[2023-11-08 20:48:54] [ INFO ] [DomicilioDAOH2:40] iniciando las operaciones de buscar un domicilio con ID: 1
+[2023-11-08 20:49:10] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:3
+[2023-11-08 20:49:10] [ INFO ] [DomicilioDAOH2:40] iniciando las operaciones de buscar un domicilio con ID: 3
+[2023-11-08 20:49:19] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-08 21:04:47] [ INFO ] [PacienteDAOH2:52] Buscando paciente con ID:2
+[2023-11-08 21:04:47] [ INFO ] [DomicilioDAOH2:40] iniciando las operaciones de buscar un domicilio con ID: 2
+[2023-11-08 21:20:00] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-08 21:46:49] [ INFO ] [BD:37] datos cargados con exito

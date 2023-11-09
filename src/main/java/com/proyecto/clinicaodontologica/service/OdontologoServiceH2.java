@@ -2,8 +2,10 @@ package com.proyecto.clinicaodontologica.service;
 import com.proyecto.clinicaodontologica.dao.OdontologoDAOH2;
 import com.proyecto.clinicaodontologica.model.Odontologo;
 import org.apache.log4j.Logger;
-import java.util.List;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+@Service
 public class OdontologoServiceH2 {
 
     private static final Logger logger= Logger.getLogger(OdontologoServiceH2.class);

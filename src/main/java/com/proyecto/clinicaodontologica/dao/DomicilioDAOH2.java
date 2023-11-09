@@ -1,14 +1,16 @@
 package com.proyecto.clinicaodontologica.dao;
-
 import com.proyecto.clinicaodontologica.model.Domicilio;
 import org.apache.log4j.Logger;
-
 import java.sql.*;
 import java.util.List;
 
 public class DomicilioDAOH2 implements iDao<Domicilio>{
     private static final Logger logger= Logger.getLogger(DomicilioDAOH2.class);
     private static final String SQL_INSERT="INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES (?,?,?,?)";
+    private static final String SQL_SELECT_BY="SELECT * FROM DOMICILIOS WHERE ID=?";
+    private static final String SQL_DELETE="DELETE * FROM DOMICILIOS WHERE ID=?";
+    private static final String SQL_UPDATE="UPDATE DOMICILIOS SET CALLE=?, NUMERO=?, LOCALIDAD=?, PROVINCIA=? WHERE ID=?";
+
 
     @Override
     public  Domicilio guardar(Domicilio domicilio) {
@@ -39,26 +41,83 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
 
     @Override
     public Domicilio buscar(Integer id) {
-        return null;
-    }
+        logger.info("Buscando domicilio por ID: " + id);
+        Connection connection= null;
+        Domicilio domicilio= null;
+        try{
+            connection= BD.getConnection();
+            PreparedStatement psSelectOne= connection.prepareStatement(SQL_SELECT_BY);
+            psSelectOne.setInt(1,id);
+            ResultSet rs= psSelectOne.executeQuery();
+            while (rs.next()){
+                domicilio= new Domicilio(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getString(4),rs.getString(5));
+            }
 
-    @Override
-    public Domicilio buscarPorString(String email) {
-        return null;
+        }catch (Exception e){
+            logger.error(e.getMessage());
+        }finally {
+            try{
+                connection.close();
+            }catch (SQLException ex){
+                logger.error(ex.getMessage());
+            }
+        }
+        return domicilio;
     }
 
     @Override
     public void eliminar(Integer id) {
+        logger.info("Eliminando domicilio por ID: " + id);
+        Connection connection= null;
+        Domicilio domicilio= null;
+        try{
+            connection= BD.getConnection();
+            PreparedStatement psDeleteOne= connection.prepareStatement(SQL_DELETE);
+            psDeleteOne.setInt(1,id);
+            ResultSet rs= psDeleteOne.executeQuery();
 
+        }catch (Exception e){
+            logger.error(e.getMessage());
+        }finally {
+            try{
+                connection.close();
+            }catch (SQLException ex){
+                logger.error(ex.getMessage());
+            }
+        }
     }
 
     @Override
     public void actualizar(Domicilio domicilio) {
+        logger.info("Actualizando Domicilio ");
+        Connection connection= null;
+        try{
+            connection= BD.getConnection();
+            PreparedStatement psUpdate= connection.prepareStatement(SQL_UPDATE);
+            psUpdate.setString(1, domicilio.getCalle());
+            psUpdate.setInt(2, domicilio.getNumero());
+            psUpdate.setString(3,domicilio.getLocalidad());
+            psUpdate.setString(3,domicilio.getProvincia());
+            psUpdate.execute();
 
+        }catch (Exception e){
+            logger.error(e.getMessage());
+        }finally {
+            try{
+                connection.close();
+            }catch (SQLException ex){
+                logger.error(ex.getMessage());
+            }
+        }
     }
 
     @Override
     public List<Domicilio> buscarTodos() {
+        return null;
+    }
+
+    @Override
+    public Domicilio buscarPorString(String valor) {
         return null;
     }
 }

@@ -13,6 +13,9 @@ public class PacienteDAOH2 implements iDao<Paciente>{
     private static final String SQL_SELECT_BY="SELECT * FROM PACIENTES WHERE ID=?";
     private static final String SQL_SELECT_BY_EMAIL="SELECT * FROM PACIENTES WHERE EMAIL=?";
     private static final String SQL_DELETE="DELETE * FROM PACIENTES WHERE ID=?";
+    private static final String SQL_UPDATE="UPDATE PACIENTES SET NOMBRE=?, APELLIDO=?, CEDULA=?, FECHA_INGRESO=?, DOMICILIO_ID=?, EMAIL=? WHERE ID =?";
+
+
     @Override
     public Paciente guardar(Paciente paciente) {
         logger.info("guardando paciente");
@@ -62,7 +65,6 @@ public class PacienteDAOH2 implements iDao<Paciente>{
             while (rs.next()){
                 domicilio= daoAux.buscar(rs.getInt(6));
                 paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7));
-
             }
 
         }catch (Exception e){
@@ -78,14 +80,21 @@ public class PacienteDAOH2 implements iDao<Paciente>{
     }
 
     @Override
+     // confirmar cuando las dos operaciones esten completas (?)
+
     public void eliminar(Integer id) {
         logger.info("Eliminando paciente con ID" + id);
         Connection connection= null;
         try{
             connection= BD.getConnection();
+            // eliminar el paciente
             PreparedStatement psDelete= connection.prepareStatement(SQL_DELETE);
             psDelete.setInt(1,id);
             psDelete.execute();
+
+            // eliminar el domicilio asociado al paciente
+            // DomicilioDAOH2 daoAux= new DomicilioDAOH2();
+            // daoAux.eliminar(id);
 
         }catch (Exception e){
             logger.error(e.getMessage());

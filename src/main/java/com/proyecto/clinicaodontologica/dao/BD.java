@@ -14,7 +14,7 @@ public class BD {
             "CEDULA VARCHAR(10) NOT NULL, FECHA_INGRESO DATE NOT NULL, DOMICILIO_ID INT NOT NULL, EMAIL VARCHAR(20) NOT NULL); " +
             "DROP TABLE IF EXISTS DOMICILIOS; CREATE TABLE DOMICILIOS (ID INT AUTO_INCREMENT PRIMARY KEY, CALLE VARCHAR(100) NOT NULL, " +
             "NUMERO INT NOT NULL, LOCALIDAD VARCHAR(100) NOT NULL, PROVINCIA VARCHAR(100) NOT NULL); " +
-            "DROP TABLE IF EXISTS ODONTOLOGOS; CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT PRIMARY KEY, NUMEROMATRICULA INT NOT NULL, " +
+            "DROP TABLE IF EXISTS ODONTOLOGOS; CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT PRIMARY KEY, MATRICULA INT NOT NULL, " +
             "NOMBRE VARCHAR(30) NOT NULL, APELLIDO VARCHAR(30) NOT NULL);" ;
 
     private static final String SQL_PRUEBA = "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES " +
@@ -23,8 +23,8 @@ public class BD {
             "('Moe', 'Szyslac', '34567', '2023-10-20', 3, 'alonemoe@gmail.com'); " +
             "INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES " +
             "('Siempre viva', '742', 'Sprinfield', 'USA'), " +
-            "('Rich Av.', '1000', 'Cordoba', 'Cordoba'), " +
-            "('Bar de Moe', '33', 'Caba', 'Bs As')";
+            "('Rich Av.', '1000', 'Lomas de Springfield', 'USA'), " +
+            "('Bar de Moe', '33', 'Springfield', 'USA')";
 
     public static void crearTabla(){
         Connection connection= null;
