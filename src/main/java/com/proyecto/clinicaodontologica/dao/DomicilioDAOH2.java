@@ -8,7 +8,7 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
     private static final Logger logger= Logger.getLogger(DomicilioDAOH2.class);
     private static final String SQL_INSERT="INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES (?,?,?,?)";
     private static final String SQL_SELECT_BY="SELECT * FROM DOMICILIOS WHERE ID=?";
-    private static final String SQL_DELETE="DELETE * FROM DOMICILIOS WHERE ID=?";
+    private static final String SQL_DELETE="DELETE FROM DOMICILIOS WHERE ID=?";
     private static final String SQL_UPDATE="UPDATE DOMICILIOS SET CALLE=?, NUMERO=?, LOCALIDAD=?, PROVINCIA=? WHERE ID=?";
 
 

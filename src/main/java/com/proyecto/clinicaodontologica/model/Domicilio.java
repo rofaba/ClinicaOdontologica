@@ -13,7 +13,9 @@ public class Domicilio {
         this.localidad = localidad;
         this.provincia = provincia;
     }
-
+    public Domicilio() {
+        // Constructor sin argumentos
+    }
     public Domicilio(Integer id, String calle, Integer numero, String localidad, String provincia) {
         this.id = id;
         this.calle = calle;
@@ -60,5 +62,15 @@ public class Domicilio {
 
     public void setProvincia(String provincia) {
         this.provincia = provincia;
+    }
+
+    @Override
+    public String toString() {
+        return "Domicilio{" +
+                "calle='" + calle + '\'' +
+                ", numero=" + numero +
+                ", localidad='" + localidad + '\'' +
+                ", provincia='" + provincia + '\'' +
+                '}';
     }
 }

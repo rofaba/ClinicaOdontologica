@@ -152,3 +152,195 @@ INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EM
 [2023-11-08 21:04:47] [ INFO ] [DomicilioDAOH2:40] iniciando las operaciones de buscar un domicilio con ID: 2
 [2023-11-08 21:20:00] [ INFO ] [BD:37] datos cargados con exito
 [2023-11-08 21:46:49] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 14:24:08] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 14:24:46] [ INFO ] [PacienteDAOH2:55] Buscando paciente con ID:1
+[2023-11-09 14:24:46] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 14:24:52] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 14:24:52] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:24:52] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 14:25:30] [ INFO ] [PacienteDAOH2:55] Buscando paciente con ID:1
+[2023-11-09 14:25:30] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 14:25:34] [ INFO ] [PacienteDAOH2:55] Buscando paciente con ID:4
+[2023-11-09 14:25:46] [ INFO ] [PacienteDAOH2:55] Buscando paciente con ID:3
+[2023-11-09 14:25:46] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 14:25:52] [ INFO ] [PacienteDAOH2:55] Buscando paciente con ID:6
+[2023-11-09 14:31:09] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 14:31:09] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:31:09] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 14:31:27] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 14:31:27] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:31:27] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 14:33:19] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 14:33:19] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:33:19] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 14:35:40] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 14:35:40] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:35:40] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 14:47:46] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 14:47:55] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 14:47:55] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 14:56:16] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 14:56:44] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 14:56:44] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 14:56:49] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:4
+[2023-11-09 14:56:55] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:2
+[2023-11-09 14:56:55] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 14:57:05] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 14:57:05] [ ERROR] [PacienteDAOH2:43] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 14:59:58] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 14:59:58] [ ERROR] [PacienteDAOH2:43] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 15:06:49] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 15:07:31] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 15:07:31] [ ERROR] [PacienteDAOH2:43] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 15:10:16] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 15:10:25] [ INFO ] [PacienteDAOH2:21] guardando paciente
+[2023-11-09 15:10:25] [ ERROR] [PacienteDAOH2:44] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 15:19:36] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 15:19:44] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:3
+[2023-11-09 15:19:44] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 15:19:50] [ INFO ] [PacienteDAOH2:21] Guardando nuevo paciente
+[2023-11-09 15:19:50] [ ERROR] [PacienteDAOH2:43] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
+[2023-11-09 15:21:44] [ INFO ] [PacienteDAOH2:21] Guardando nuevo paciente
+[2023-11-09 15:21:44] [ INFO ] [PacienteDAOH2:39]  paciente guardado
+[2023-11-09 15:33:02] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 15:33:02] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 15:33:02] [ INFO ] [PacienteDAOH2:88] Eliminando paciente con ID1
+[2023-11-09 15:33:02] [ ERROR] [PacienteDAOH2:102] Error de Sintaxis en sentencia SQL "DELETE [*]* FROM PACIENTES WHERE ID=?"; se esperaba "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM PACIENTES WHERE ID=?"; expected "identifier"; SQL statement:
+DELETE * FROM PACIENTES WHERE ID=? [42001-214]
+[2023-11-09 15:33:31] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:2
+[2023-11-09 15:33:31] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 15:33:35] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 15:33:35] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 15:47:46] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 15:48:02] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 15:48:03] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 15:48:03] [ INFO ] [PacienteDAOH2:88] Eliminando paciente con ID1
+[2023-11-09 15:48:03] [ INFO ] [DomicilioDAOH2:70] Eliminando domicilio por ID: 1
+[2023-11-09 15:48:03] [ ERROR] [DomicilioDAOH2:80] Error de Sintaxis en sentencia SQL "DELETE [*]* FROM DOMICILIOS WHERE ID=?"; se esperaba "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM DOMICILIOS WHERE ID=?"; expected "identifier"; SQL statement:
+DELETE * FROM DOMICILIOS WHERE ID=? [42001-214]
+[2023-11-09 15:48:07] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 15:49:58] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 15:52:21] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 15:52:22] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 15:52:28] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 15:52:28] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 15:52:28] [ INFO ] [PacienteDAOH2:88] Eliminando paciente con ID1
+[2023-11-09 15:52:28] [ INFO ] [DomicilioDAOH2:70] Eliminando domicilio por ID: 1
+[2023-11-09 15:52:28] [ ERROR] [DomicilioDAOH2:80] Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+DELETE FROM DOMICILIOS WHERE ID=? [90002-214]
+[2023-11-09 15:52:32] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 15:57:22] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 16:02:33] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 16:02:33] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 16:21:01] [ WARN ] [BD:40] La base de datos puede que ya esté siendo utilizada: "C:/Users/Rofaba_FTW/OdontoDataBase.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Rofaba_FTW/OdontoDataBase.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+[2023-11-09 16:22:19] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 16:22:42] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 16:22:42] [ ERROR] [PacienteDAOH2:73] La base de datos puede que ya esté siendo utilizada: "C:/Users/Rofaba_FTW/OdontoDataBase.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Rofaba_FTW/OdontoDataBase.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+[2023-11-09 16:22:53] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:1
+[2023-11-09 16:22:53] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 16:23:01] [ INFO ] [PacienteDAOH2:21] Guardando nuevo paciente
+[2023-11-09 16:23:01] [ INFO ] [PacienteDAOH2:39]  paciente guardado
+[2023-11-09 16:23:11] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:4
+[2023-11-09 16:23:11] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 4
+[2023-11-09 16:23:19] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:3
+[2023-11-09 16:23:19] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 16:23:19] [ INFO ] [PacienteDAOH2:88] Eliminando paciente con ID3
+[2023-11-09 16:23:19] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:3
+[2023-11-09 16:23:19] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 16:23:19] [ INFO ] [DomicilioDAOH2:70] Eliminando domicilio por ID: 3
+[2023-11-09 16:23:19] [ ERROR] [DomicilioDAOH2:80] Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+DELETE FROM DOMICILIOS WHERE ID=? [90002-214]
+[2023-11-09 16:23:33] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:2
+[2023-11-09 16:23:33] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 16:23:37] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:3
+[2023-11-09 16:23:42] [ INFO ] [PacienteDAOH2:57] Buscando paciente con ID:4
+[2023-11-09 16:23:42] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 4
+[2023-11-09 16:24:56] [ INFO ] [PacienteDAOH2:137] Listando todos los pacientes
+[2023-11-09 16:24:56] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 16:24:56] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 16:24:56] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 4
+[2023-11-09 16:28:18] [ INFO ] [PacienteDAOH2:137] Listando todos los pacientes
+[2023-11-09 16:28:18] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 16:28:18] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 16:28:18] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 4
+[2023-11-09 16:28:41] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 16:28:47] [ INFO ] [PacienteDAOH2:137] Listando todos los pacientes
+[2023-11-09 16:28:47] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 16:28:47] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 16:28:47] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 16:45:56] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 16:46:01] [ INFO ] [PacienteDAOH2:137] Listando todos los pacientes
+[2023-11-09 16:46:01] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 16:46:01] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 16:46:01] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 16:48:45] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 16:48:55] [ INFO ] [PacienteDAOH2:137] Listando todos los pacientes
+[2023-11-09 16:48:55] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 16:48:55] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 16:48:55] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 16:49:52] [ INFO ] [PacienteDAOH2:21] Guardando nuevo paciente
+[2023-11-09 16:49:52] [ INFO ] [PacienteDAOH2:39]  paciente guardado
+[2023-11-09 16:58:35] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 16:58:46] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-09 16:58:46] [ INFO ] [PacienteDAOH2:41]  paciente guardado
+[2023-11-09 16:58:51] [ INFO ] [PacienteDAOH2:141] Listando todos los pacientes
+[2023-11-09 16:58:51] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 16:58:51] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 16:58:51] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 16:58:51] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 4
+[2023-11-09 16:59:23] [ INFO ] [PacienteDAOH2:141] Listando todos los pacientes
+[2023-11-09 16:59:23] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 16:59:23] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 16:59:23] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 16:59:23] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 4
+[2023-11-09 17:00:13] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 17:00:21] [ INFO ] [PacienteDAOH2:140] Listando todos los pacientes
+[2023-11-09 17:00:21] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:00:21] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 17:00:21] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 17:02:11] [ INFO ] [PacienteDAOH2:140] Listando todos los pacientes
+[2023-11-09 17:02:11] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:02:11] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 17:02:11] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 17:04:38] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 17:04:44] [ INFO ] [PacienteDAOH2:140] Listando todos los pacientes
+[2023-11-09 17:04:44] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:04:44] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 17:04:44] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 17:06:48] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: alonemoe@gmail.com
+[2023-11-09 17:06:48] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 17:09:39] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 17:09:48] [ INFO ] [PacienteDAOH2:140] Listando todos los pacientes
+[2023-11-09 17:09:48] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:09:48] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 17:09:48] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 17:10:06] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 17:10:06] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:10:11] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 17:10:11] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:12:46] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 17:13:26] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 17:13:26] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:13:28] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 17:13:28] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:13:30] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 17:13:30] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:13:38] [ INFO ] [PacienteDAOH2:140] Listando todos los pacientes
+[2023-11-09 17:13:38] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:13:38] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 2
+[2023-11-09 17:13:38] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 17:13:46] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 17:13:46] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:14:07] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 17:14:14] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 17:14:14] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 17:14:39] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: alonemoe@gmail.com
+[2023-11-09 17:14:39] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-09 17:15:30] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 17:15:30] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
