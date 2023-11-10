@@ -25,7 +25,7 @@ public class PacienteDAOH2 implements iDao<Paciente>{
         try{
             connection= BD.getConnection();
             DomicilioDAOH2 daoAux= new DomicilioDAOH2();
-            
+
             Domicilio domicilio= daoAux.guardar(paciente.getDomicilio());
             PreparedStatement psInsert= connection.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS);
             psInsert.setString(1, paciente.getNombre());

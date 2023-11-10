@@ -3,7 +3,7 @@ package com.proyecto.clinicaodontologica.model;
 
 public class Odontologo {
     private Integer id;
-    private String matricula; //<<---- ID
+    private String matricula;
     private String nombre;
     private String apellido;
 

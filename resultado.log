@@ -365,3 +365,77 @@ DELETE FROM DOMICILIOS WHERE ID=? [90002-214]
 [2023-11-09 21:52:39] [ INFO ] [PacienteDAOH2:41]  paciente guardado
 [2023-11-09 21:52:45] [ INFO ] [PacienteDAOH2:59] Buscando paciente con ID:4
 [2023-11-09 21:52:45] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 4
+[2023-11-10 10:08:54] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-10 10:09:06] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-10 10:09:06] [ INFO ] [PacienteDAOH2:42]  paciente guardado
+[2023-11-10 10:09:24] [ INFO ] [PacienteDAOH2:60] Buscando paciente con ID:4
+[2023-11-10 10:09:24] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 4
+[2023-11-10 10:09:29] [ INFO ] [PacienteDAOH2:60] Buscando paciente con ID:1
+[2023-11-10 10:09:29] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-10 10:24:06] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-10 10:37:51] [ WARN ] [BD:47] Error de Sintaxis en sentencia SQL "INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre viva', '742', 'Sprinfield', 'USA'), ('Rich Av.', '1000', 'Lomas de Springfield', 'USA'), ('Bar de Moe', '33', 'Springfield', 'USA')[*]INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES ('SM6913', 'Nick', 'Riviera'),('SM2365', 'Julius', 'Hibbert'),('SM7901', 'Marcos', 'Muelas'),"
+Syntax error in SQL statement "INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre viva', '742', 'Sprinfield', 'USA'), ('Rich Av.', '1000', 'Lomas de Springfield', 'USA'), ('Bar de Moe', '33', 'Springfield', 'USA')[*]INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES ('SM6913', 'Nick', 'Riviera'),('SM2365', 'Julius', 'Hibbert'),('SM7901', 'Marcos', 'Muelas'),"; SQL statement:
+INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre viva', '742', 'Sprinfield', 'USA'), ('Rich Av.', '1000', 'Lomas de Springfield', 'USA'), ('Bar de Moe', '33', 'Springfield', 'USA')INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES ('SM6913', 'Nick', 'Riviera'),('SM2365', 'Julius', 'Hibbert'),('SM7901', 'Marcos', 'Muelas'), [42000-214]
+[2023-11-10 10:43:07] [ WARN ] [BD:46] Error de Sintaxis en sentencia SQL "INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre viva', '742', 'Sprinfield', 'USA'), ('Rich Av.', '1000', 'Lomas de Springfield', 'USA'), ('Bar de Moe', '33', 'Springfield', 'USA')[*]INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES ('SM6913', 'Nick', 'Riviera'),('SM2365', 'Julius', 'Hibbert'),('SM7901', 'Marcos', 'Muelas');"
+Syntax error in SQL statement "INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre viva', '742', 'Sprinfield', 'USA'), ('Rich Av.', '1000', 'Lomas de Springfield', 'USA'), ('Bar de Moe', '33', 'Springfield', 'USA')[*]INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES ('SM6913', 'Nick', 'Riviera'),('SM2365', 'Julius', 'Hibbert'),('SM7901', 'Marcos', 'Muelas');"; SQL statement:
+INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre viva', '742', 'Sprinfield', 'USA'), ('Rich Av.', '1000', 'Lomas de Springfield', 'USA'), ('Bar de Moe', '33', 'Springfield', 'USA')INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES ('SM6913', 'Nick', 'Riviera'),('SM2365', 'Julius', 'Hibbert'),('SM7901', 'Marcos', 'Muelas'); [42000-214]
+[2023-11-10 10:43:54] [ WARN ] [BD:46] Conversión de datos fallida, convirtiendo "'SM6913' (ODONTOLOGOS: ""MATRICULA"" INTEGER NOT NULL)"
+Data conversion error converting "'SM6913' (ODONTOLOGOS: ""MATRICULA"" INTEGER NOT NULL)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES ('Homero', 'Simpson', 'C4043243', '1956-05-12', 1, 'hombrex@gmail.com'), ('Montgomery', 'Burns', '00145', '2023-10-15', 2, 'mrburns@gmail.com'), ('Moe', 'Szyslac', '34567', '2023-10-20', 3, 'alonemoe@gmail.com') [22018-214]
+[2023-11-10 10:49:27] [ WARN ] [BD:59] Conversión de datos fallida, convirtiendo "'SM6913' (ODONTOLOGOS: ""MATRICULA"" INTEGER NOT NULL)"
+Data conversion error converting "'SM6913' (ODONTOLOGOS: ""MATRICULA"" INTEGER NOT NULL)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES ('Homero', 'Simpson', 'C4043243', '1956-05-12', 1, 'hombrex@gmail.com') [22018-214]
+[2023-11-10 10:55:18] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-10 10:58:40] [ INFO ] [PacienteDAOH2:60] Buscando paciente con ID:1
+[2023-11-10 10:58:40] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-10 10:59:31] [ INFO ] [PacienteDAOH2:60] Buscando paciente con ID:3
+[2023-11-10 10:59:31] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-10 11:00:13] [ INFO ] [PacienteDAOH2:172] Buscando paciente por EMail: alonemoe@gmail.com
+[2023-11-10 11:00:13] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
+[2023-11-10 11:00:39] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 1
+[2023-11-10 11:02:57] [ INFO ] [OdontologoDAOH2:18] iniciando las operaciones de : guardado odontologo:MataApellido: Sanos Matricula :  SM7789
+[2023-11-10 11:11:44] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:12:51] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:12:52] [ INFO ] [OdontologoDAOH2:96] Actualizando odontologo 
+[2023-11-10 11:12:52] [ ERROR] [OdontologoDAOH2:107] Parametro "#4" no está fijado
+Parameter "#4" is not set; SQL statement:
+UPDATE ODONTOLOGOS SET MATRICULA=?, NOMBRE=?, APELLIDO=? WHERE ID =? [90012-214]
+[2023-11-10 11:12:57] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:12:58] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:13:43] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-10 11:14:00] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:14:16] [ INFO ] [OdontologoDAOH2:18] iniciando las operaciones de : guardado odontologo:MataApellido: Sanos Matricula :  SM7789
+[2023-11-10 11:14:22] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:14:27] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:14:27] [ INFO ] [OdontologoDAOH2:96] Actualizando odontologo 
+[2023-11-10 11:14:27] [ ERROR] [OdontologoDAOH2:107] Parametro "#4" no está fijado
+Parameter "#4" is not set; SQL statement:
+UPDATE ODONTOLOGOS SET MATRICULA=?, NOMBRE=?, APELLIDO=? WHERE ID =? [90012-214]
+[2023-11-10 11:14:32] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:14:38] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 3
+[2023-11-10 11:14:44] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:20:24] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-10 11:20:41] [ INFO ] [OdontologoDAOH2:18] iniciando las operaciones de : guardado odontologo:MataApellido: Sanos Matricula :  SM7789
+[2023-11-10 11:20:48] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:20:48] [ INFO ] [OdontologoDAOH2:97] Actualizando odontologo
+[2023-11-10 11:20:52] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:23:04] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:23:29] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:23:29] [ INFO ] [OdontologoDAOH2:74] Eliminando Odontologo con ID:  4
+[2023-11-10 11:23:29] [ ERROR] [OdontologoDAOH2:83] Error de Sintaxis en sentencia SQL "DELETE [*]* FROM ODONTOLOGOS WHERE ID=?"; se esperaba "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM ODONTOLOGOS WHERE ID=?"; expected "identifier"; SQL statement:
+DELETE * FROM ODONTOLOGOS WHERE ID=? [42001-214]
+[2023-11-10 11:23:36] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:23:41] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:23:55] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-10 11:24:43] [ INFO ] [OdontologoDAOH2:18] iniciando las operaciones de : guardado odontologo:MataApellido: Sanos Matricula :  SM7789
+[2023-11-10 11:24:49] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:24:50] [ INFO ] [OdontologoDAOH2:97] Actualizando odontologo
+[2023-11-10 11:24:52] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:24:56] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4
+[2023-11-10 11:24:56] [ INFO ] [OdontologoDAOH2:74] Eliminando Odontologo con ID:  4
+[2023-11-10 11:24:56] [ ERROR] [OdontologoDAOH2:83] Error de Sintaxis en sentencia SQL "DELETE [*]* FROM ODONTOLOGOS WHERE ID=?"; se esperaba "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM ODONTOLOGOS WHERE ID=?"; expected "identifier"; SQL statement:
+DELETE * FROM ODONTOLOGOS WHERE ID=? [42001-214]
+[2023-11-10 11:25:04] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 3
+[2023-11-10 11:25:09] [ INFO ] [OdontologoDAOH2:46] iniciando las operaciones de : buscado por ID 4

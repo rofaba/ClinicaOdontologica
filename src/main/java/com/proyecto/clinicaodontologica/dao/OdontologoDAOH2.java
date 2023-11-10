@@ -12,7 +12,7 @@ public class OdontologoDAOH2 implements iDao<Odontologo>{
     private static final String SQL_SELECT_BY="SELECT * FROM ODONTOLOGOS WHERE ID=?";
     private static final String SQL_SELECT_BY_MATRICULA="SELECT * FROM ODONTOLOGOS WHERE MATRICULA=?";
     private static final String SQL_UPDATE="UPDATE ODONTOLOGOS SET MATRICULA=?, NOMBRE=?, APELLIDO=? WHERE ID =?";
-    private static final String SQL_DELETE="DELETE * FROM ODONTOLOGOS WHERE ID=?";
+    private static final String SQL_DELETE="DELETE FROM ODONTOLOGOS WHERE ID=?";
     @Override
     public Odontologo guardar(Odontologo odontologo) {
         logger.info("iniciando las operaciones de : guardado odontologo:"+odontologo.getNombre()+"Apellido: "+odontologo.getApellido()+" Matricula :  "+odontologo.getMatricula());
@@ -89,30 +89,31 @@ public class OdontologoDAOH2 implements iDao<Odontologo>{
             }
         }
 
-    }
-
-    @Override
+    }    @Override
     public void actualizar(Odontologo odontologo) {
-        logger.info("Actualizando odontologo ");
-        Connection connection= null;
-        try{
-            connection= BD.getConnection();
-            PreparedStatement psUpdate= connection.prepareStatement(SQL_UPDATE);
+        logger.info("Actualizando odontologo");
+        Connection connection = null;
+        try {
+            connection = BD.getConnection();
+            PreparedStatement psUpdate = connection.prepareStatement(SQL_UPDATE);
             psUpdate.setString(1, odontologo.getMatricula());
             psUpdate.setString(2, odontologo.getNombre());
-            psUpdate.setString(3,odontologo.getApellido());
-            psUpdate.execute();
+            psUpdate.setString(3, odontologo.getApellido());
+            // ID como cuarto parámetro
+            psUpdate.setInt(4, odontologo.getId());
+            psUpdate.executeUpdate();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             logger.error(e.getMessage());
-        }finally {
-            try{
-                connection.close();
-            }catch (SQLException ex){
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException ex) {
                 logger.error(ex.getMessage());
             }
         }
-
     }
 
     @Override
@@ -134,7 +135,7 @@ public class OdontologoDAOH2 implements iDao<Odontologo>{
     }
 
     @Override
-    public Odontologo buscarPorString(String valor) {
+    public Odontologo buscarPorString(String palabraclave) {
         logger.info("iniciando las operaciones de : ");
         Connection connection= null;
         try{
