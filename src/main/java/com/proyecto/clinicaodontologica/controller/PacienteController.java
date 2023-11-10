@@ -58,6 +58,6 @@ public class PacienteController {
         Paciente paciente= pacienteService.buscarPorEmail(correo);
         model.addAttribute("nombre",paciente.getNombre());
         model.addAttribute("apellido",paciente.getApellido());
-        return "index";
+        return "paciente";
     }
 }

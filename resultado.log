@@ -344,3 +344,24 @@ DELETE FROM DOMICILIOS WHERE ID=? [90002-214]
 [2023-11-09 17:14:39] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
 [2023-11-09 17:15:30] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
 [2023-11-09 17:15:30] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 19:22:08] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 19:25:56] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 19:26:11] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 19:26:11] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 19:26:58] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 19:27:03] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 19:27:03] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 19:28:05] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 19:28:11] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 19:28:11] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 21:44:10] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 21:45:19] [ INFO ] [PacienteDAOH2:171] Buscando paciente por EMail: hombrex@gmail.com
+[2023-11-09 21:45:19] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 21:47:09] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 21:50:41] [ INFO ] [BD:37] datos cargados con exito
+[2023-11-09 21:51:51] [ INFO ] [PacienteDAOH2:59] Buscando paciente con ID:1
+[2023-11-09 21:51:51] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
+[2023-11-09 21:52:39] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-09 21:52:39] [ INFO ] [PacienteDAOH2:41]  paciente guardado
+[2023-11-09 21:52:45] [ INFO ] [PacienteDAOH2:59] Buscando paciente con ID:4
+[2023-11-09 21:52:45] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 4
