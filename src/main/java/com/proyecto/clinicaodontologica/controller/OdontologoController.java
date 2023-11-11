@@ -46,13 +46,17 @@ import com.proyecto.clinicaodontologica.service.OdontologoServiceH2;
         @GetMapping("/listar")
         public String listarOdontologos(Model model){
             model.addAttribute("odontologos",odontologoService.buscarTodosOdontologos());
-            return "odontologos";
+
+        return "odontologos";
         }
+
         @GetMapping("/buscarMatricula")
         public String buscarOdontologoPorMatricula(Model model, @RequestParam("matricula") String matricula){
             Odontologo odontologo= odontologoService.buscarPorMatricula(matricula);
+            model.addAttribute("matricula",odontologo.getMatricula());
             model.addAttribute("nombre",odontologo.getNombre());
             model.addAttribute("apellido",odontologo.getApellido());
+
             return "odontologo";
         }
 
