@@ -513,3 +513,68 @@ DELETE * FROM ODONTOLOGOS WHERE ID=? [42001-214]
 [2023-11-11 10:42:41] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
 [2023-11-11 10:42:45] [ INFO ] [OdontologoDAOH2:155] iniciando las operaciones de : 
 [2023-11-11 10:47:49] [ INFO ] [OdontologoDAOH2:155] iniciando las operaciones de : 
+[2023-11-11 10:48:33] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 10:48:37] [ INFO ] [OdontologoDAOH2:155] Buscando odontólogo por Matrícula de : SM6913
+[2023-11-11 11:59:17] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 12:21:40] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 12:29:38] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 12:29:38] [ ERROR] [PacienteDAOH2:46] Valor demasiado largo para la columna "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"
+Value too long for column "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES(?,?,?,?,?,?) [22001-214]
+[2023-11-11 12:30:11] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 12:30:11] [ INFO ] [PacienteDAOH2:42]  paciente guardado
+[2023-11-11 12:32:07] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 12:35:54] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 12:40:47] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 18:29:25] [ INFO ] [OdontologoDAOH2:123] Listando todos los odontolólogos
+[2023-11-11 18:29:25] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado odontologo:JohnApellido: Doe Matricula :  12345
+[2023-11-11 18:29:25] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-11 18:29:25] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado odontologo:JohnApellido: Doe Matricula :  12345
+[2023-11-11 18:29:25] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado odontologo:JohnApellido: Doe Matricula :  12345
+[2023-11-11 18:29:25] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  6
+[2023-11-11 18:29:25] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 6
+[2023-11-11 18:29:26] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: -1
+[2023-11-11 18:32:38] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 18:36:48] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 18:37:06] [ INFO ] [OdontologoDAOH2:123] Listando todos los odontolólogos
+[2023-11-11 18:37:07] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado odontologo:JohnApellido: Doe Matricula :  12345
+[2023-11-11 18:37:07] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-11 18:37:07] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado odontologo:JohnApellido: Doe Matricula :  12345
+[2023-11-11 18:37:07] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado odontologo:JohnApellido: Doe Matricula :  12345
+[2023-11-11 18:37:07] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  6
+[2023-11-11 18:37:07] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 6
+[2023-11-11 18:37:07] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: -1
+[2023-11-11 18:37:18] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 18:37:18] [ ERROR] [PacienteDAOH2:46] Valor demasiado largo para la columna "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"
+Value too long for column "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES(?,?,?,?,?,?) [22001-214]
+[2023-11-11 18:37:56] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 18:37:56] [ ERROR] [PacienteDAOH2:46] Valor demasiado largo para la columna "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"
+Value too long for column "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES(?,?,?,?,?,?) [22001-214]
+[2023-11-11 18:38:17] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 18:38:26] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 18:38:26] [ ERROR] [PacienteDAOH2:46] Valor demasiado largo para la columna "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"
+Value too long for column "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES(?,?,?,?,?,?) [22001-214]
+[2023-11-11 18:38:46] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 18:38:56] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 18:38:56] [ ERROR] [PacienteDAOH2:46] Valor demasiado largo para la columna "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"
+Value too long for column "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES(?,?,?,?,?,?) [22001-214]
+[2023-11-11 18:39:33] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 18:39:33] [ ERROR] [PacienteDAOH2:46] Valor demasiado largo para la columna "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"
+Value too long for column "CEDULA CHARACTER VARYING(10)": "'Cedula Test' (11)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES(?,?,?,?,?,?) [22001-214]
+[2023-11-11 18:40:56] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 18:41:19] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 18:41:19] [ INFO ] [PacienteDAOH2:42]  paciente guardado
+[2023-11-11 18:45:34] [ INFO ] [OdontologoDAOH2:123] Listando todos los odontolólogos
+[2023-11-11 18:45:41] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 18:45:41] [ INFO ] [PacienteDAOH2:42]  paciente guardado
+[2023-11-11 18:46:45] [ INFO ] [PacienteDAOH2:23] Guardando nuevo paciente
+[2023-11-11 18:46:45] [ INFO ] [PacienteDAOH2:42]  paciente guardado
+[2023-11-11 18:48:42] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 18:51:35] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 18:58:26] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-11 19:10:50] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
