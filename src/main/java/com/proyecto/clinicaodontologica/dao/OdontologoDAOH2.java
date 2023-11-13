@@ -17,7 +17,7 @@ public class OdontologoDAOH2 implements iDao<Odontologo>{
     private static final String SQL_DELETE="DELETE FROM ODONTOLOGOS WHERE ID=?";
     @Override
     public Odontologo guardar(Odontologo odontologo) {
-        logger.info("iniciando las operaciones de : guardado odontologo:"+odontologo.getNombre()+"Apellido: "+odontologo.getApellido()+" Matricula :  "+odontologo.getMatricula());
+        logger.info("Guardando odontólogo: "+ odontologo.getNombre() + " Apellido: "+odontologo.getApellido() + " Matricula :  "+ odontologo.getMatricula());
         Connection connection= null;
         try{
             connection= BD.getConnection();

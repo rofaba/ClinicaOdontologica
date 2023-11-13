@@ -2,21 +2,21 @@ window.addEventListener('load', function () {
 
 //Al cargar la pagina buscamos y obtenemos el formulario donde estarán
 //los datos que el usuario cargará de la nueva pelicula
-const formulario = document.querySelector('#add_new_pelicula');
+const formulario = document.querySelector('#add_new_odontologo');
 
 //Ante un submit del formulario se ejecutará la siguiente funcion
 formulario.addEventListener('submit', function (event) {
 
 //creamos un JSON que tendrá los datos de la nueva película
 const formData = {
-titulo: document.querySelector('#titulo').value,
-categoria: document.querySelector('#categoria').value,
-premios: document.querySelector('#premios').value,
+matricula: document.querySelector('#matricula').value,
+nombre: document.querySelector('#nombre').value,
+apellido: document.querySelector('#apellido').value,
 
 };
 //invocamos utilizando la función fetch la API peliculas con el método POST que guardará
 //la película que enviaremos en formato JSON
-const url = '/peliculas';
+const url = '/odontologos';
 const settings = {
 method: 'POST',
 headers: {
@@ -32,7 +32,7 @@ fetch(url, settings)
 //se agrego bien
 let successAlert = '<div class="alert alert-success alert-dismissible">' +
     '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
-    '<strong></strong> Pelicula agregada </div>'
+    '<strong></strong> Odontólogo agregado exitosamente </div>'
 
 document.querySelector('#response').innerHTML = successAlert;
 document.querySelector('#response').style.display = "block";
@@ -44,7 +44,7 @@ resetUploadForm();
 //no se pudo guardar y se intente nuevamente
 let errorAlert = '<div class="alert alert-danger alert-dismissible">' +
     '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
-    '<strong> Error intente nuevamente</strong> </div>'
+    '<strong> Error en el proceso de guardado, por favor intente nuevamente</strong> </div>'
 
 document.querySelector('#response').innerHTML = errorAlert;
 document.querySelector('#response').style.display = "block";
@@ -52,20 +52,21 @@ document.querySelector('#response').style.display = "block";
 resetUploadForm();})
 });
 
-
 function resetUploadForm(){
-document.querySelector('#titulo').value = "";
-document.querySelector('#categoria').value = "";
-document.querySelector('#premios').value = "";
-
+document.querySelector('#matricula').value = "";
+document.querySelector('#nombre').value = "";
+document.querySelector('#apellido').value = "";
 }
 
-(function(){
-let pathname = window.location.pathname;
-if(pathname === "/"){
-document.querySelector(".nav .nav-item a:first").addClass("active");
-} else if (pathname == "/peliculaList.html") {
-document.querySelector(".nav .nav-item a:last").addClass("active");
-}
+(function () {
+    console.log("Script ejecutándose...");
+    let pathname = window.location.pathname;
+    console.log("Ruta actual:", pathname);
+
+    if (pathname === "/") {
+        $(".nav .nav-item a:first").addClass("active");
+    } else if (pathname === "/odontologoListar.html") {
+        $(".nav .nav-item a:last").addClass("active");
+    }
 })();
 });

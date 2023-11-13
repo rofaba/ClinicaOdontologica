@@ -578,3 +578,25 @@ INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EM
 [2023-11-11 18:51:35] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
 [2023-11-11 18:58:26] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
 [2023-11-11 19:10:50] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 16:25:22] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:24:19] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:28:28] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:30:08] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:30:45] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:31:03] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:37:05] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:42:53] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:44:06] [ INFO ] [OdontologoDAOH2:123] Listando todos los odontolólogos
+[2023-11-12 21:45:48] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado odontologo:MataApellido: Sanos Matricula :  SM7789
+[2023-11-12 21:45:56] [ INFO ] [OdontologoDAOH2:123] Listando todos los odontolólogos
+[2023-11-12 21:46:20] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:50:36] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:51:15] [ INFO ] [OdontologoDAOH2:123] Listando todos los odontolólogos
+[2023-11-12 21:55:17] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 21:55:54] [ INFO ] [OdontologoDAOH2:123] Listando todos los odontolólogos
+[2023-11-12 22:00:59] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 22:02:43] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 22:04:04] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 22:06:15] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-12 22:06:50] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado odontologo:PatricioApellido: Donald Matricula :  MS9434
+[2023-11-12 22:07:17] [ INFO ] [OdontologoDAOH2:123] Listando todos los odontolólogos
