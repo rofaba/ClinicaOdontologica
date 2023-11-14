@@ -1,4 +1,4 @@
-package com.proyecto.tests.service;
+package com.proyecto.clinicaodontologica.tests.service;
 
 import com.proyecto.clinicaodontologica.service.OdontologoServiceH2;
 import com.proyecto.clinicaodontologica.model.Odontologo;

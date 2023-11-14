@@ -1,4 +1,4 @@
-package com.proyecto.tests.dao;
+package com.proyecto.clinicaodontologica.tests.dao;
 
 import com.proyecto.clinicaodontologica.dao.OdontologoDAOH2;
 import com.proyecto.clinicaodontologica.model.Odontologo;

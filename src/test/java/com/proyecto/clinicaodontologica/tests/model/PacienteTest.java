@@ -1,4 +1,4 @@
-package com.proyecto.tests.model;
+package com.proyecto.clinicaodontologica.tests.model;
 import com.proyecto.clinicaodontologica.model.Domicilio;
 import com.proyecto.clinicaodontologica.model.Paciente;
 import org.junit.jupiter.api.Test;

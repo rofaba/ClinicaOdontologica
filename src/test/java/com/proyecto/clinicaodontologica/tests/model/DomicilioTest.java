@@ -1,4 +1,4 @@
-package com.proyecto.tests.model;
+package com.proyecto.clinicaodontologica.tests.model;
 import com.proyecto.clinicaodontologica.model.Domicilio;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;

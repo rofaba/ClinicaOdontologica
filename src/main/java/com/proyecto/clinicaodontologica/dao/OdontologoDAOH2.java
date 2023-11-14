@@ -91,7 +91,8 @@ public class OdontologoDAOH2 implements iDao<Odontologo>{
             }
         }
 
-    }    @Override
+    }
+    @Override
     public void actualizar(Odontologo odontologo) {
         logger.info("Actualizando odontologo");
         Connection connection = null;
