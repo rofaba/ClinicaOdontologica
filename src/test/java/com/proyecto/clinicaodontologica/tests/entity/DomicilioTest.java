@@ -1,5 +1,5 @@
-package com.proyecto.clinicaodontologica.tests.model;
-import com.proyecto.clinicaodontologica.model.Domicilio;
+package com.proyecto.clinicaodontologica.tests.entity;
+import com.proyecto.clinicaodontologica.entity.Domicilio;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

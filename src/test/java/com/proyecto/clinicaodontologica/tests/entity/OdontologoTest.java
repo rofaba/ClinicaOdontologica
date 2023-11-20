@@ -1,6 +1,6 @@
-package com.proyecto.clinicaodontologica.tests.model;
+package com.proyecto.clinicaodontologica.tests.entity;
 
-import com.proyecto.clinicaodontologica.model.Odontologo;
+import com.proyecto.clinicaodontologica.entity.Odontologo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,7 +12,7 @@ public class OdontologoTest {
 
     @Test
     void odontologoConstructor_ConParametros_DeberiaCrearOdontologoCorrectamente() {
-        Odontologo odontologo = new Odontologo(1, "12345", "John", "Doe");
+        Odontologo odontologo = new Odontologo("12345", "John", "Doe");
         assertEquals(1, odontologo.getId());
         assertEquals("12345", odontologo.getMatricula());
         assertEquals("John", odontologo.getNombre());

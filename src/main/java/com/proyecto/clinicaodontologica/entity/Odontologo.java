@@ -1,37 +1,47 @@
-package com.proyecto.clinicaodontologica.model;
+package com.proyecto.clinicaodontologica.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
+@Entity
+@Table(name = "odontologos")
 public class Odontologo {
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column
     private String matricula;
+    @Column
     private String nombre;
+    @Column
     private String apellido;
+    @OneToMany(mappedBy = "odontologo",fetch = FetchType.LAZY)
+    @JsonIgnore
+    private Set<Turno> turnos= new HashSet<>();
+
 
     public Odontologo() {
     }
 
-    public Odontologo(Integer id, String matricula, String nombre, String apellido) {
-        this.id = id;
+    public Odontologo(String matricula, String nombre, String apellido, Set<Turno> turnos) {
         this.matricula = matricula;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.turnos = turnos;
     }
 
-    public Odontologo(String matricula, String nombre, String apellido) {
-        this.matricula = matricula;
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Odontologo(String number, String john, String doe) {
     }
 
-
-
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

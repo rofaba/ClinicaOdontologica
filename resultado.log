@@ -156,7 +156,7 @@ INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EM
 [2023-11-09 14:24:46] [ INFO ] [PacienteDAOH2:55] Buscando paciente con ID:1
 [2023-11-09 14:24:46] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
 [2023-11-09 14:24:52] [ INFO ] [PacienteDAOH2:21] guardando paciente
-[2023-11-09 14:24:52] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:24:52] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.entity.Domicilio.getCalle()" because "domicilio" is null
 [2023-11-09 14:24:52] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
 [2023-11-09 14:25:30] [ INFO ] [PacienteDAOH2:55] Buscando paciente con ID:1
 [2023-11-09 14:25:30] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 1
@@ -165,16 +165,16 @@ INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EM
 [2023-11-09 14:25:46] [ INFO ] [DomicilioDAOH2:44] Buscando domicilio por ID: 3
 [2023-11-09 14:25:52] [ INFO ] [PacienteDAOH2:55] Buscando paciente con ID:6
 [2023-11-09 14:31:09] [ INFO ] [PacienteDAOH2:21] guardando paciente
-[2023-11-09 14:31:09] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:31:09] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.entity.Domicilio.getCalle()" because "domicilio" is null
 [2023-11-09 14:31:09] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
 [2023-11-09 14:31:27] [ INFO ] [PacienteDAOH2:21] guardando paciente
-[2023-11-09 14:31:27] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:31:27] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.entity.Domicilio.getCalle()" because "domicilio" is null
 [2023-11-09 14:31:27] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
 [2023-11-09 14:33:19] [ INFO ] [PacienteDAOH2:21] guardando paciente
-[2023-11-09 14:33:19] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:33:19] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.entity.Domicilio.getCalle()" because "domicilio" is null
 [2023-11-09 14:33:19] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
 [2023-11-09 14:35:40] [ INFO ] [PacienteDAOH2:21] guardando paciente
-[2023-11-09 14:35:40] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.model.Domicilio.getCalle()" because "domicilio" is null
+[2023-11-09 14:35:40] [ ERROR] [DomicilioDAOH2:31] Cannot invoke "com.proyecto.clinicaodontologica.entity.Domicilio.getCalle()" because "domicilio" is null
 [2023-11-09 14:35:40] [ ERROR] [PacienteDAOH2:42] Cannot invoke "java.time.LocalDate.getYear()" because "date" is null
 [2023-11-09 14:47:46] [ INFO ] [BD:37] datos cargados con exito
 [2023-11-09 14:47:55] [ INFO ] [PacienteDAOH2:21] guardando paciente
@@ -651,3 +651,360 @@ INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EM
 [2023-11-14 13:20:01] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
 [2023-11-14 13:20:01] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  1
 [2023-11-14 13:20:20] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 13:22:04] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 13:22:16] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 13:22:16] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  1
+[2023-11-14 13:22:22] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 15:21:36] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 15:22:43] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 15:23:24] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 15:27:39] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 15:27:58] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 15:27:58] [ INFO ] [OdontologoDAOH2:97] Actualizando odontologo
+[2023-11-14 15:28:06] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 15:34:25] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 15:37:50] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 15:38:44] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 15:40:11] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 15:44:23] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 15:46:31] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:00:49] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:01:25] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:03:57] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:05:04] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:05:10] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:12:32] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:12:50] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:13:02] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Patricio Apellido: Donald Matricula :  MS9434
+[2023-11-14 16:13:06] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:13:12] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:13:22] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 16:13:22] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  1
+[2023-11-14 16:13:26] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:13:42] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 16:13:42] [ INFO ] [OdontologoDAOH2:97] Actualizando odontologo
+[2023-11-14 16:13:45] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:13:53] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 16:14:00] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:14:03] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:16:13] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:16:35] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:16:43] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Rodrigo Apellido: Mouse Matricula :  MS9434
+[2023-11-14 16:16:50] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:16:55] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 16:16:55] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  4
+[2023-11-14 16:17:04] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 16:17:04] [ INFO ] [OdontologoDAOH2:97] Actualizando odontologo
+[2023-11-14 16:17:06] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:17:12] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:17:22] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Rodrigo Apellido: perez Matricula :  MS9434
+[2023-11-14 16:17:57] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:19:18] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:20:10] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:20:38] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:21:48] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:22:12] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 16:22:34] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:22:41] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:23:00] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:23:10] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:23:45] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Facundo Apellido: Faure Matricula :  MS9435
+[2023-11-14 16:23:48] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:24:09] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:24:34] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 16:24:34] [ INFO ] [OdontologoDAOH2:97] Actualizando odontologo
+[2023-11-14 16:24:38] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:24:46] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 16:24:46] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  4
+[2023-11-14 16:24:53] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:26:01] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 16:26:05] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:26:16] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 16:26:19] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:41:02] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:41:10] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:41:22] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:41:46] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Nick Apellido: Riviera Matricula :  SM6913
+[2023-11-14 16:41:48] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:42:08] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 16:42:08] [ INFO ] [OdontologoDAOH2:97] Actualizando odontologo
+[2023-11-14 16:42:11] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:42:32] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 16:42:32] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  2
+[2023-11-14 16:42:38] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:42:39] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:42:40] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:58:57] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:59:08] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: uihgsenuvsgt Apellido: f Matricula :  6q4thgeuyt57687tyr6dhtcfw6gtvw8eg6b6vh8wyedfhigby67i
+[2023-11-14 16:59:08] [ ERROR] [OdontologoDAOH2:35] Valor demasiado largo para la columna "MATRICULA CHARACTER VARYING(10)": "'6q4thgeuyt57687tyr6dhtcfw6gtvw8eg6b6vh8wyedfhigby67i' (52)"
+Value too long for column "MATRICULA CHARACTER VARYING(10)": "'6q4thgeuyt57687tyr6dhtcfw6gtvw8eg6b6vh8wyedfhigby67i' (52)"; SQL statement:
+INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES(?,?,?) [22001-214]
+[2023-11-14 16:59:09] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:59:17] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: rwrw Apellido: regr Matricula :  wergrfgrgeaehrrw
+[2023-11-14 16:59:17] [ ERROR] [OdontologoDAOH2:35] Valor demasiado largo para la columna "MATRICULA CHARACTER VARYING(10)": "'wergrfgrgeaehrrw' (16)"
+Value too long for column "MATRICULA CHARACTER VARYING(10)": "'wergrfgrgeaehrrw' (16)"; SQL statement:
+INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES(?,?,?) [22001-214]
+[2023-11-14 16:59:19] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:59:23] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 16:59:37] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Rodrigo Apellido: perez Matricula :  vs34768
+[2023-11-14 16:59:38] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 17:00:00] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Rodrigo Apellido: faure Matricula :  y8tqduytfgyude
+[2023-11-14 17:00:00] [ ERROR] [OdontologoDAOH2:35] Valor demasiado largo para la columna "MATRICULA CHARACTER VARYING(10)": "'y8tqduytfgyude' (14)"
+Value too long for column "MATRICULA CHARACTER VARYING(10)": "'y8tqduytfgyude' (14)"; SQL statement:
+INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES(?,?,?) [22001-214]
+[2023-11-14 17:00:02] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 17:00:14] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 17:00:14] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  8
+[2023-11-14 17:00:16] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 17:00:28] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Rodrigo Apellido: faure Matricula :  ggh654287
+[2023-11-14 17:00:30] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 17:00:45] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Rodrigo Apellido: faure Matricula :  ujjj5849302
+[2023-11-14 17:00:45] [ ERROR] [OdontologoDAOH2:35] Valor demasiado largo para la columna "MATRICULA CHARACTER VARYING(10)": "'ujjj5849302' (11)"
+Value too long for column "MATRICULA CHARACTER VARYING(10)": "'ujjj5849302' (11)"; SQL statement:
+INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES(?,?,?) [22001-214]
+[2023-11-14 17:00:46] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 17:00:52] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 10
+[2023-11-14 17:00:52] [ INFO ] [OdontologoDAOH2:76] Eliminando Odontologo con ID:  10
+[2023-11-14 17:00:54] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 17:07:16] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 17:07:46] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:07:49] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 17:08:02] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:08:04] [ INFO ] [OdontologoDAOH2:124] Listando todos los odontolólogos
+[2023-11-14 17:27:10] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 17:27:20] [ INFO ] [OdontologoDAOH2:133] Listando todos los odontolólogos
+[2023-11-14 17:27:26] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:27:31] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:27:45] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:31:42] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 17:32:07] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:32:18] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Patricio Apellido: Donald Matricula :  MS9434
+[2023-11-14 17:32:21] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:32:26] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:32:26] [ INFO ] [OdontologoDAOH2:77] Eliminando Odontologo con ID:  4
+[2023-11-14 17:32:29] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:32:34] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:32:46] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:32:49] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:33:01] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 17:33:01] [ INFO ] [OdontologoDAOH2:105] Actualizando odontologo
+[2023-11-14 17:33:03] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:33:10] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:33:25] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:33:26] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:33:31] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:33:35] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:35:42] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 17:35:52] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:35:56] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:39:04] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 17:39:15] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:39:22] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:39:31] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:39:36] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:39:47] [ INFO ] [OdontologoDAOH2:20] Guardando odontólogo: Rodrigo Apellido: perez Matricula :  MS9434
+[2023-11-14 17:39:49] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:39:55] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 17:39:55] [ INFO ] [OdontologoDAOH2:77] Eliminando Odontologo con ID:  4
+[2023-11-14 17:39:58] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 17:40:04] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 19:12:59] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 19:13:11] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 19:13:33] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 19:13:33] [ INFO ] [OdontologoDAOH2:77] Eliminando Odontologo con ID:  2
+[2023-11-14 19:17:51] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 19:18:16] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 19:18:23] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 19:18:28] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 19:18:28] [ INFO ] [OdontologoDAOH2:77] Eliminando Odontologo con ID:  2
+[2023-11-14 19:18:28] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 19:18:30] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 19:18:40] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 19:18:44] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 19:29:19] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 19:30:17] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 19:30:19] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 19:30:24] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 19:30:24] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID:  2
+[2023-11-14 19:30:27] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 19:30:31] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 19:30:38] [ INFO ] [OdontologoDAOH2:137] Listando todos los odontolólogos
+[2023-11-14 19:39:44] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 19:40:07] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 19:40:12] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 19:40:31] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 19:40:33] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 19:40:37] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 19:40:37] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID:  1
+[2023-11-14 19:40:37] [ INFO ] [OdontologoDAOH2:87] Odontólogo con ID 1 eliminado exitosamente.
+[2023-11-14 19:40:38] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 19:43:52] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 19:44:21] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 19:44:27] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 19:44:27] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID:  2
+[2023-11-14 19:44:27] [ INFO ] [OdontologoDAOH2:87] Odontólogo con ID 2 eliminado exitosamente.
+[2023-11-14 19:44:29] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 19:44:33] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 10
+[2023-11-14 19:44:44] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 19:44:48] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 19:44:51] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 19:45:01] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 19:45:04] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 19:59:19] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 19:59:48] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 19:59:53] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 20:00:17] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 20:00:27] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:00:32] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 20:00:32] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID:  2
+[2023-11-14 20:00:32] [ ERROR] [OdontologoDAOH2:93] Odontólogo con ID 2 no encontrado.
+[2023-11-14 20:00:37] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:00:43] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 20:00:58] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 20:06:25] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 20:48:28] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 20:48:39] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:48:44] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 20:49:11] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 20:49:19] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 20:52:53] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 20:53:04] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:53:08] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:53:14] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:53:18] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 20:53:28] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 20:53:31] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:57:29] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 20:57:51] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:57:58] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 20:58:04] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 20:58:04] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID:  1
+[2023-11-14 20:58:04] [ ERROR] [OdontologoDAOH2:93] Odontólogo con ID 1 no encontrado.
+[2023-11-14 20:58:06] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:59:02] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 20:59:15] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:59:19] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 20:59:19] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID:  1
+[2023-11-14 20:59:19] [ INFO ] [OdontologoDAOH2:87] Odontólogo con ID 1 eliminado exitosamente.
+[2023-11-14 20:59:22] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 20:59:27] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 4
+[2023-11-14 20:59:32] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 21:00:20] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:00:27] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 21:00:32] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 21:01:34] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:01:42] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 21:01:46] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 21:03:40] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:03:55] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:04:01] [ INFO ] [OdontologoDAOH2:140] Listando todos los odontolólogos
+[2023-11-14 21:04:06] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 10
+[2023-11-14 21:04:09] [ INFO ] [OdontologoDAOH2:140] Listando todos los odontolólogos
+[2023-11-14 21:06:41] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:06:49] [ INFO ] [OdontologoDAOH2:130] Listando todos los odontolólogos
+[2023-11-14 21:07:01] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:07:01] [ INFO ] [OdontologoDAOH2:101] Intentando Actualizar Odontologo con ID:  1
+[2023-11-14 21:07:01] [ INFO ] [OdontologoDAOH2:112] Odontólogo con ID 1 actualizado exitosamente.
+[2023-11-14 21:07:03] [ INFO ] [OdontologoDAOH2:130] Listando todos los odontolólogos
+[2023-11-14 21:07:08] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 2
+[2023-11-14 21:07:08] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID:  2
+[2023-11-14 21:07:08] [ INFO ] [OdontologoDAOH2:85] Odontólogo con ID 2 eliminado exitosamente.
+[2023-11-14 21:07:10] [ INFO ] [OdontologoDAOH2:130] Listando todos los odontolólogos
+[2023-11-14 21:07:15] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 21:13:09] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:13:29] [ INFO ] [OdontologoDAOH2:140] Listando todos los odontolólogos
+[2023-11-14 21:13:35] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 21:14:29] [ INFO ] [OdontologoDAOH2:140] Listando todos los odontolólogos
+[2023-11-14 21:14:32] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 10
+[2023-11-14 21:16:10] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:16:35] [ INFO ] [OdontologoDAOH2:140] Listando todos los odontolólogos
+[2023-11-14 21:16:38] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 21:16:38] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 8 no encontrado.
+[2023-11-14 21:18:28] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:18:39] [ INFO ] [OdontologoDAOH2:134] Listando todos los odontolólogos
+[2023-11-14 21:18:43] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:18:43] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID:  1
+[2023-11-14 21:18:43] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:18:43] [ INFO ] [OdontologoDAOH2:87] Odontólogo con ID 1 eliminado exitosamente.
+[2023-11-14 21:18:48] [ INFO ] [OdontologoDAOH2:134] Listando todos los odontolólogos
+[2023-11-14 21:18:52] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 10
+[2023-11-14 21:18:52] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 10 no encontrado.
+[2023-11-14 21:19:39] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:19:46] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 10
+[2023-11-14 21:19:46] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 10 no encontrado.
+[2023-11-14 21:22:29] [ INFO ] [OdontologoDAOH2:134] Listando todos los odontolólogos
+[2023-11-14 21:22:33] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:22:33] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID:  1
+[2023-11-14 21:22:33] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:22:33] [ INFO ] [OdontologoDAOH2:87] Odontólogo con ID 1 eliminado exitosamente.
+[2023-11-14 21:22:36] [ INFO ] [OdontologoDAOH2:134] Listando todos los odontolólogos
+[2023-11-14 21:24:55] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:25:06] [ INFO ] [OdontologoDAOH2:133] Listando todos los odontolólogos
+[2023-11-14 21:25:10] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:25:10] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID: 1
+[2023-11-14 21:25:10] [ INFO ] [OdontologoDAOH2:86] Odontólogo con ID 1 eliminado exitosamente.
+[2023-11-14 21:25:17] [ INFO ] [OdontologoDAOH2:133] Listando todos los odontolólogos
+[2023-11-14 21:25:21] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 10
+[2023-11-14 21:25:21] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 10 no encontrado.
+[2023-11-14 21:25:26] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 21:25:26] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 8 no encontrado.
+[2023-11-14 21:25:31] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 21:25:31] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 8 no encontrado.
+[2023-11-14 21:26:59] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:27:20] [ INFO ] [OdontologoDAOH2:133] Listando todos los odontolólogos
+[2023-11-14 21:28:29] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:28:29] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID: 1
+[2023-11-14 21:28:29] [ INFO ] [OdontologoDAOH2:86] Odontólogo con ID 1 eliminado exitosamente.
+[2023-11-14 21:28:30] [ INFO ] [OdontologoDAOH2:133] Listando todos los odontolólogos
+[2023-11-14 21:28:35] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 7
+[2023-11-14 21:28:35] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 7 no encontrado.
+[2023-11-14 21:28:37] [ INFO ] [OdontologoDAOH2:133] Listando todos los odontolólogos
+[2023-11-14 21:47:24] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:47:37] [ INFO ] [OdontologoDAOH2:135] Listando todos los odontolólogos
+[2023-11-14 21:47:38] [ INFO ] [OdontologoDAOH2:135] Listando todos los odontolólogos
+[2023-11-14 21:47:44] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:47:44] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID: 1
+[2023-11-14 21:47:44] [ INFO ] [OdontologoDAOH2:86] Odontólogo con ID 1 eliminado exitosamente. Filas afectadas: 1
+[2023-11-14 21:47:46] [ INFO ] [OdontologoDAOH2:135] Listando todos los odontolólogos
+[2023-11-14 21:47:50] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 7
+[2023-11-14 21:47:50] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 7 no encontrado.
+[2023-11-14 21:49:28] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:50:24] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:51:07] [ INFO ] [OdontologoDAOH2:141] Listando todos los odontolólogos
+[2023-11-14 21:51:12] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 21:51:12] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 8 no encontrado.
+[2023-11-14 21:53:08] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:53:20] [ INFO ] [OdontologoDAOH2:141] Listando todos los odontolólogos
+[2023-11-14 21:53:26] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:53:26] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID: 1
+[2023-11-14 21:53:26] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 21:53:26] [ INFO ] [OdontologoDAOH2:89] Odontólogo con ID 1 eliminado exitosamente. Filas afectadas: 1
+[2023-11-14 21:53:28] [ INFO ] [OdontologoDAOH2:141] Listando todos los odontolólogos
+[2023-11-14 21:53:32] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 10
+[2023-11-14 21:53:32] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 10 no encontrado.
+[2023-11-14 21:56:42] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 21:56:58] [ INFO ] [OdontologoDAOH2:139] Listando todos los odontolólogos
+[2023-11-14 21:57:05] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 21:57:05] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 8 no encontrado.
+[2023-11-14 21:59:28] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 22:00:03] [ INFO ] [OdontologoDAOH2:146] Listando todos los odontolólogos
+[2023-11-14 22:00:06] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 22:00:06] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 8 no encontrado.
+[2023-11-14 22:00:50] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 22:01:11] [ INFO ] [OdontologoDAOH2:159] Listando todos los odontolólogos
+[2023-11-14 22:01:14] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 22:01:14] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 8 no encontrado.
+[2023-11-14 22:04:12] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 22:04:46] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 6
+[2023-11-14 22:04:46] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 6 no encontrado.
+[2023-11-14 22:04:57] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 22:04:57] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 8 no encontrado.
+[2023-11-14 22:12:24] [ INFO ] [BD:56] Base de datos creada, datos de prueba cargados
+[2023-11-14 22:12:36] [ INFO ] [OdontologoDAOH2:142] Listando todos los odontolólogos
+[2023-11-14 22:12:40] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 1
+[2023-11-14 22:12:40] [ INFO ] [OdontologoDAOH2:77] Intentando Eliminar Odontologo con ID: 1
+[2023-11-14 22:12:40] [ INFO ] [OdontologoDAOH2:90] Odontólogo con ID 1 eliminado exitosamente.
+[2023-11-14 22:12:42] [ INFO ] [OdontologoDAOH2:142] Listando todos los odontolólogos
+[2023-11-14 22:12:46] [ INFO ] [OdontologoDAOH2:48] Buscando Odontólogo por ID: 8
+[2023-11-14 22:12:46] [ INFO ] [OdontologoDAOH2:59] Odontólogo con ID 8 no encontrado.
+[2023-11-14 22:12:50] [ INFO ] [OdontologoDAOH2:142] Listando todos los odontolólogos

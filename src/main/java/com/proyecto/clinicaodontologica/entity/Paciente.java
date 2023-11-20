@@ -1,44 +1,71 @@
-package com.proyecto.clinicaodontologica.model;
+package com.proyecto.clinicaodontologica.entity;
+
+import com.proyecto.clinicaodontologica.entity.Turno;
+import com.proyecto.clinicaodontologica.entity.Domicilio;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
-
+@Entity
+@Table(name = "pacientes")
 public class Paciente {
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column
     private String nombre;
+    @Column
     private String apellido;
+    @Column
     private String cedula;
+    @Column
     private LocalDate fechaIngreso;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "domicilio_id",referencedColumnName = "id")
     private Domicilio domicilio;
+    @Column(unique = true)
     private String email;
+    @OneToMany(mappedBy = "paciente",fetch = FetchType.LAZY)
+    @JsonIgnore
+    private Set<Turno> turnos= new HashSet<>();
 
-    //Constructor con Argumentos
+    public Paciente() {
+    }
+
     public Paciente(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
-        this.email = email;
+        this.email=email;
     }
-    public Paciente() {
-        // Constructor sin Argumentos
-    }
-    //constructor con ID incluido
-    public Paciente(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email) {
+
+    public Paciente(Long id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
+        this.email=email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -82,14 +109,6 @@ public class Paciente {
         this.domicilio = domicilio;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     @Override
     public String toString() {
         return "Paciente{" +
@@ -99,8 +118,7 @@ public class Paciente {
                 ", cedula='" + cedula + '\'' +
                 ", fechaIngreso=" + fechaIngreso +
                 ", domicilio=" + domicilio +
-                ", email='" + email + '\'' +
+                ", Email =" + email +
                 '}';
     }
 }
-

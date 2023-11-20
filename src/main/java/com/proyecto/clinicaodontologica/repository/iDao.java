@@ -1,6 +1,4 @@
-package com.proyecto.clinicaodontologica.dao;
-
-import com.proyecto.clinicaodontologica.model.Paciente;
+package com.proyecto.clinicaodontologica.repository;
 
 import java.util.List;
 

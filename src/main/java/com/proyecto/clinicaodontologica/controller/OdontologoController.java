@@ -1,64 +1,45 @@
 package com.proyecto.clinicaodontologica.controller;
-import org.springframework.ui.Model;
-import com.proyecto.clinicaodontologica.model.Odontologo;
+import com.proyecto.clinicaodontologica.entity.Odontologo;
+import com.proyecto.clinicaodontologica.service.OdontologoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.proyecto.clinicaodontologica.service.OdontologoServiceH2;
-    @RestController
-    @RequestMapping("/odontologos")
-    public class OdontologoController {
-        private OdontologoServiceH2 odontologoService;
 
-        @Autowired
-        public OdontologoController(OdontologoServiceH2 odontologoService) {
-            this.odontologoService = odontologoService;
-        }
-        @PostMapping
-        public Odontologo registrarOdontologo(@RequestBody Odontologo odontologo){
-            return odontologoService.guardarOdontologo(odontologo);
-        }
-        @GetMapping("/{id}")
-        public Odontologo buscarOdontologoPorID(@PathVariable("id") Integer id){
-            return odontologoService.buscarPorId(id);
-        }
+import java.util.List;
+import java.util.Optional;
 
+@RestController
+@RequestMapping("/odontologos")
+public class OdontologoController {
+    //relacion de asociacion con el servicio
+    @Autowired
+    private OdontologoService odontologoService;
 
-        @PutMapping
-        public String actualizarOdontologo(@RequestBody Odontologo odontologo){
-            Odontologo o = odontologoService.buscarPorId(odontologo.getId());
-            if(o != null){
-                odontologoService.actualizarOdontologo(odontologo); // Cambio aquí
-                return "Odontologo actualizado";
-            } else {
-                return "Odontologo no encontrado";
-            }
-        }
-        @DeleteMapping("/eliminar/{id}")
-        public String eliminarOdontologo(@PathVariable("id") Integer id){
-            Odontologo o= odontologoService.buscarPorId(id);
-            if(o != null){
-                odontologoService.eliminarOdontologo(id);
-                return "odontologo eliminado con exito";
-            }else{
-                return "odontologo no encontrado";
-            }
-        }
-        @GetMapping("/listar")
-        public String listarOdontologos(Model model){
-            model.addAttribute("odontologos",odontologoService.buscarTodosOdontologos());
-
-        return "odontologos";
-        }
-
-        @GetMapping("/buscarMatricula")
-        public String buscarOdontologoPorMatricula(Model model, @RequestParam("matricula") String matricula){
-            Odontologo odontologo= odontologoService.buscarPorMatricula(matricula);
-            model.addAttribute("matricula",odontologo.getMatricula());
-            model.addAttribute("nombre",odontologo.getNombre());
-            model.addAttribute("apellido",odontologo.getApellido());
-
-            return "odontologo";
-        }
-
+    @PostMapping
+    public ResponseEntity<Odontologo> registrarOdontologo(@RequestBody Odontologo odontologo){
+        return ResponseEntity.ok(odontologoService.registrarOdontologo(odontologo));
     }
-
+    @GetMapping("/todos")
+    public ResponseEntity<List<Odontologo>> buscarTodos(){
+        return ResponseEntity.ok(odontologoService.listarTodos());
+    }
+    @PutMapping
+    public ResponseEntity<String> actualizarOdontologo(@RequestBody Odontologo odontologo){
+        Optional<Odontologo> odontologoBuscado= odontologoService.buscarPorId(odontologo.getId());
+        if(odontologoBuscado.isPresent()){
+            odontologoService.actualizarOdontologo(odontologo);
+            return ResponseEntity.ok("Odontologo actualizado");
+        }
+        else{
+            return ResponseEntity.badRequest().body("Odontologo no encontrado");
+        }
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<Optional<Odontologo>> buscarPorID(@PathVariable Long id){
+        return ResponseEntity.ok(odontologoService.buscarPorId(id));
+    }
+    @GetMapping("/busqueda/{matricula}")
+    public ResponseEntity<Optional<Odontologo>> buscarPorMatricula(@PathVariable String matricula){
+        return ResponseEntity.ok(odontologoService.buscarPorMatricula(matricula));
+    }
+}

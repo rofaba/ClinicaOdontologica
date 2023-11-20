@@ -1,11 +1,23 @@
-package com.proyecto.clinicaodontologica.model;
+package com.proyecto.clinicaodontologica.entity;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "domicilios")
 public class Domicilio {
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column
     private String calle;
+    @Column
     private Integer numero;
+    @Column
     private String localidad;
+    @Column
     private String  provincia;
+
+    public Domicilio() {
+    }
 
     public Domicilio(String calle, Integer numero, String localidad, String provincia) {
         this.calle = calle;
@@ -13,25 +25,15 @@ public class Domicilio {
         this.localidad = localidad;
         this.provincia = provincia;
     }
-    public Domicilio() {
-        // Constructor sin argumentos
-    }
-    public Domicilio(Integer id, String calle, Integer numero, String localidad, String provincia) {
-        this.id = id;
-        this.calle = calle;
-        this.numero = numero;
-        this.localidad = localidad;
-        this.provincia = provincia;
-    }
 
-    public Integer getId() {
+
+
+    public Long getId() {
         return id;
     }
-
-    public void setId(Integer id) {
+    private void setId(Long id) {
         this.id = id;
     }
-
     public String getCalle() {
         return calle;
     }
@@ -67,7 +69,8 @@ public class Domicilio {
     @Override
     public String toString() {
         return "Domicilio{" +
-                "calle='" + calle + '\'' +
+                "id=" + id +
+                ", calle='" + calle + '\'' +
                 ", numero=" + numero +
                 ", localidad='" + localidad + '\'' +
                 ", provincia='" + provincia + '\'' +
